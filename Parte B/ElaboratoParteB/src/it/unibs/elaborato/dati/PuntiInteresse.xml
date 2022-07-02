@@ -1,0 +1,28 @@
+<puntiInteresse>
+    <puntoInteresse>
+        <piazza>Pontoglio</piazza>
+        <luoghi>
+            <luogo>Semaforo</luogo>
+            <luogo>Centro</luogo>
+            <luogo>Spiaggia dei poveri</luogo>
+            <luogo>Fermata 90</luogo>
+            <luogo>Laghetto</luogo>
+        </luoghi>
+        <giorni>
+            <giorno>LUNEDI</giorno>
+            <giorno>MERCOLEDI</giorno>
+            <giorno>VENERDI</giorno>
+        </giorni>
+        <intervalli_orari>
+            <intervallo_orario>
+                <ora_inizio>8:00</ora_inizio>
+                <ora_fine>10:00</ora_fine>
+            </intervallo_orario>
+            <intervallo_orario>
+                <ora_inizio>15:00</ora_inizio>
+                <ora_fine>19:30</ora_fine>
+            </intervallo_orario>
+        </intervalli_orari>
+        <scadenza>4</scadenza>
+    </puntoInteresse>
+</puntiInteresse>

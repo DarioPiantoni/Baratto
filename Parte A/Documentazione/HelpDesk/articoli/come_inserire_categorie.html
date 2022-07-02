@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Baratto in zona | Come inserire le categorie?</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Baratto in zona</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+     
+      <div class="container mt-5" style="padding-left: 10rem; padding-right: 10rem;">
+        <div style="text-align: center;">
+          <h2>Come inserire le categorie?</h2>
+        </div>
+        <div>
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Creato: 03/03/2022</a></li>
+            <p class="nav-link px-2 text-muted">|</p>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ultima modifica: 03/03/2022</a></li>
+          </ul>
+        </div>
+        <div class="alert alert-danger text-center" role="alert">
+          Questa guida è riferita esclusivamente al configuratore
+        </div>
+        <div class="text-muted">
+          <p>
+            Per inserire le categorie sarà sufficiente compilare un file xml da rinominare <code><i>Categorie.xml</i></code>.
+            <br>
+            La categoria radice dovrà essere univoca, dunque non ci devono essere due radici con lo stesso nome.
+            <br>
+            Inoltre l'albero sotto la radice dovrà essere anch'essa univoca, quindi nell'albero di una radice non ci devono essere doppioni.
+            <br>
+            Per inserire più categorie sarà sufficiente inserire un'altra struttura <code><i>&lt;categoria></i></code> all'interno
+            della struttura <code><i>&lt;categorie></i></code>
+            <br>
+            <div class="alert alert-danger text-center" role="alert">
+              Non è necessario inserire come campi lo Stato di conservazione e la Descrizione, in quanto sono inserite di default
+            </div>
+            <br>
+            Esempio
+            <br>
+            <code>
+              <pre>
+                &lt;categorie>
+                  &lt;categoria>
+                  ...
+                  ...
+                  &lt;/categoria>
+                  &lt;categoria>
+                  ...
+                  ...
+                  &lt;/categoria>
+                  &lt;categoria>
+                  ...
+                  ...
+                  &lt;/categoria>
+                &lt;/categorie>
+              </pre>
+            </code>
+            <br>
+            Esempio di file xml:
+          </p>
+        </div>
+        <div class="text-muted">
+          <code>
+            <pre>
+              &lt;categorie>
+                &lt;categoria>
+                  &lt;nome>Elettronica&lt;/nome>
+                  &lt;descrizione>Elettronica di consumo&lt;/descrizione>
+                  &lt;campi>
+                      &lt;campo>
+                          &lt;nome>Marca&lt;/nome>
+                          &lt;tipo>PAROLA&lt;/tipo>
+                          &lt;obbligatorio>false&lt;/obbligatorio>
+                      &lt;/campo>
+                      &lt;campo>
+                          &lt;nome>Modello&lt;/nome>
+                          &lt;tipo>PAROLA&lt;/tipo>
+                          &lt;obbligatorio>true&lt;/obbligatorio>
+                      &lt;/campo>
+                  &lt;/campi>
+                  &lt;nome_categoria_padre>null&lt;/nome_categoria_padre>
+                &lt;/categoria>
+                &lt;categoria>
+                    &lt;nome>Telefonia&lt;/nome>
+                    &lt;descrizione>Telefoni&lt;/descrizione>
+                    &lt;campi>&lt;/campi>
+                    &lt;nome_categoria_padre>Elettronica&lt;/nome_categoria_padre>
+                &lt;/categoria>
+                &lt;categoria>
+                    &lt;nome>Smartphone&lt;/nome>
+                    &lt;descrizione>Smartphone di ultima generazione&lt;/descrizione>
+                    &lt;campi>
+                        &lt;campo>
+                            &lt;nome>Processore&lt;/nome>
+                            &lt;tipo>PAROLA&lt;/tipo>
+                            &lt;obbligatorio>false&lt;/obbligatorio>
+                        &lt;/campo>
+                        &lt;campo>
+                            &lt;nome>Memoria&lt;/nome>
+                            &lt;tipo>INTERO&lt;/tipo>
+                            &lt;obbligatorio>true&lt;/obbligatorio>
+                        &lt;/campo>
+                        &lt;campo>
+                            &lt;nome>SDcard&lt;/nome>
+                            &lt;tipo>VEROFALSO&lt;/tipo>
+                            &lt;obbligatorio>false&lt;/obbligatorio>
+                        &lt;/campo>
+                        &lt;campo>
+                            &lt;nome>Dimensione schermo&lt;/nome>
+                            &lt;tipo>DECIMALE&lt;/tipo>
+                            &lt;obbligatorio>false&lt;/obbligatorio>
+                        &lt;/campo>
+                    &lt;/campi>
+                    &lt;nome_categoria_padre>Telefonia&lt;/nome_categoria_padre>
+                &lt;/categoria>
+              &lt;/categorie>
+            </pre>
+          </code>
+          
+        </div>
+      </div>  
+
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2022 Baratto in zona, Inc</p>
+        </footer>
+      </div>
+</body>
+</html>

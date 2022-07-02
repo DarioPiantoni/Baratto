@@ -1,0 +1,16 @@
+GRASP
+Information Expert: GIA FATTO (RESPONSABILITA DI ARCA MENTRE GIOCAVA A GTA)
+Low Coupling: Per l'interfaccia Lista che aumenta il riuso, anche l'interfaccia Commerciabile utile per
+future espansioni con vendite dove le risposte conterranno anche la contrattazione del prezzo
+(BY PIANTZ) N.B. NON AVEVA VOGLIA DI FAR NULLA
+
+SOLID
+Single responsability principle: aggiunta classe Scadenza così Scambio e ListaScambio ora hanno un solo
+compito
+Liskov substitution principle: in Utente al posto di String username e password sono state aggiunte classi Username
+e Password
+Interface Segregation Principle: Sostituti ArrayList con Collection e List
+
+GOF
+State: aggiunto ArticoloState e modificato i vari stati mettendo per una classe per ogni stato (FATTO DA YASSINE)
+Chain Of Responsability: sostituzione instanceof con chain of responsability (c'è un package dove c'è tutto)

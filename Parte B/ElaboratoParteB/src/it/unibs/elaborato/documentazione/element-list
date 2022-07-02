@@ -1,0 +1,13 @@
+it.unibs.elaborato.categoria
+it.unibs.elaborato.chainofresponsability
+it.unibs.elaborato.exception
+it.unibs.elaborato.main
+it.unibs.elaborato.mercato
+it.unibs.elaborato.mercato.articolo
+it.unibs.elaborato.mercato.articolo.stato
+it.unibs.elaborato.mvc.controller
+it.unibs.elaborato.mvc.model
+it.unibs.elaborato.mvc.view
+it.unibs.elaborato.test
+it.unibs.elaborato.utente
+it.unibs.elaborato.utils

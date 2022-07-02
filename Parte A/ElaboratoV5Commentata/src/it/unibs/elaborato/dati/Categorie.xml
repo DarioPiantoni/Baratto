@@ -1,0 +1,102 @@
+<categorie>
+    <categoria>
+        <nome>Libro</nome>
+        <descrizione>Libri cartacei da leggere</descrizione>
+        <campi>
+            <campo>
+                <nome>ISBN</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>true</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Genere</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Titolo</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>true</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Editore</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Autore</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>true</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Numero pagine</nome>
+                <tipo>INTERO</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+            
+        </campi>
+        <nome_categoria_padre>null</nome_categoria_padre>
+    </categoria>
+    <categoria>
+        <nome>Libro per bambini</nome>
+        <descrizione>Libri cartacei da leggere per bambini 3-12</descrizione>
+        <campi>
+            <campo>
+                <nome>Illustrazioni</nome>
+                <tipo>VEROFALSO</tipo>
+                <obbligatorio>true</obbligatorio>
+            </campo>     
+        </campi>
+        <nome_categoria_padre>Libro</nome_categoria_padre>
+    </categoria>
+    <categoria>
+        <nome>Elettronica</nome>
+        <descrizione>Elettronica di consumo</descrizione>
+        <campi>
+            <campo>
+                <nome>Marca</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+	    <campo>
+                <nome>Modello</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>true</obbligatorio>
+            </campo>
+        </campi>
+        <nome_categoria_padre>null</nome_categoria_padre>
+    </categoria>
+    <categoria>
+        <nome>Telefonia</nome>
+        <descrizione>Telefoni</descrizione>
+        <campi></campi>
+        <nome_categoria_padre>Elettronica</nome_categoria_padre>
+    </categoria>
+    <categoria>
+        <nome>Smartphone</nome>
+        <descrizione>Smartphone di ultima generazione</descrizione>
+        <campi>
+            <campo>
+                <nome>Processore</nome>
+                <tipo>PAROLA</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Memoria</nome>
+                <tipo>INTERO</tipo>
+                <obbligatorio>true</obbligatorio>
+            </campo>
+            <campo>
+                <nome>SDcard</nome>
+                <tipo>VEROFALSO</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+            <campo>
+                <nome>Dimensione schermo</nome>
+                <tipo>DECIMALE</tipo>
+                <obbligatorio>false</obbligatorio>
+            </campo>
+        </campi>
+        <nome_categoria_padre>Telefonia</nome_categoria_padre>
+    </categoria>
+</categorie>
